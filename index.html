@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dokkit Bot - Version 0.0.1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="utils/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script>window.jQuery=window.$=require("./utils/jquery");</script>
+		<script src="utils/bootstrap.min.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div id="account-info">
+			<span id="name">Seize</span>
+			
+			<span>
+				<span>
+					<b>Rank</b>&nbsp;&nbsp;
+					<span id="rank">5,425</span>
+				</span>
+				<img src="assets/zeni.png">
+				<span id="zeni">800,000,000,000</span>
+				<img src="assets/dragonstone.png">
+				<span id="dragon-stones">8,000,000</span>
+			</span>
+		</div>
+		<div id="loading-screen">
+			<span id="loading-text"></span>
+		</div>
+		<div id="region-menu">
+			<h1>Select a Region</h1>
+			<button class="btn btn-primary" style="margin-left: 16px;">Global</button>
+			<button class="btn btn-primary" style="margin-left:calc(50vw + 8px);">Japan</button>
+			<textarea readonly style="margin-left: 16px;"></textarea>
+			<textarea readonly style="margin-left: calc(50vw + 8px);"></textarea>
+		</div>
+		<div id="account-menu">
+			<table>
+				<thead>
+					<tr>
+						<th>User ID</th>
+						<th>Name</th>
+						<th>Platform</th>
+						<th>Rank</th>
+						<th>Dragon Stones</th>
+					</tr>
+				</thead>
+			</table>
+			<div><table class="table-striped">
+				<thead><tr><th></th><th></th><th></th><th></th><th></th></tr></thead>
+				<tbody></tbody>
+			</table></div>
+			<button class="btn btn-primary">Create Account</button>
+			<button class="btn btn-primary">Import Account</button>
+			<button class="btn btn-danger">Delete Account</button>
+			<button class="btn btn-dark">Back</button>
+		</div>
+		<div id="main-menu" class="active-account">
+			<button btn="1">Story</button>
+		</div>
+		<div id="captcha-handler">
+			<iframe></iframe>
+		</div>
+		<div id="overlay">
+			<div id="account-creator">
+				<button class="btn btn-primary">Create</button>
+				<h2>Account Creator</h2>
+				<span>Platform:</span>
+				<select class="form-control">
+					<option>Android</option>
+					<option>IOS</option>
+				</select><br><br>
+				<span></span>
+			</div>
+			<div id="confirm-message">
+				<button class="btn"></button>
+				<button class="btn"></button>
+				<h5></h5>
+				<span></span>
+			</div>
+		</div>
+	</body>
+</html>

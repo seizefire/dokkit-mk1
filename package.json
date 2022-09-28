@@ -1,0 +1,20 @@
+{
+	"name": "dokkit",
+	"version": "1.0.0",
+	"description": "A GUI-based DBZ Dokkan Battle bot made in Node.js",
+	"main": "start.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"author": "Seizefire",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"sqlite": "^4.0.9",
+		"sqlite3": "^4.2.0"
+	},
+	"devDependencies": {
+		"electron": "^8.2.0",
+		"electron-rebuild": "^1.10.1"
+	}
+}
